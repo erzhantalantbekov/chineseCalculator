@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item input"><form name="form"><input type="text" name="textview" readonly></form></div>
+        <div class="item clean" onclick="clean()">C</div>
+        <div class="item back" onclick="back()">&larr;</div>
+        <div class="item" onclick="insert('+')">+</div>
+        <div class="item" onclick="insert('-')">-</div>
+        <div class="item" onclick="insert('*')">&times;</div>
+        <div class="item" onclick="insert('/')">&divide;</div>
+        <div class="item" onclick="insert('7')">七</div>
+        <div class="item" onclick="insert('8')">八</div>
+        <div class="item" onclick="insert('9')">九</div>
+        
+        <button onclick="showRandomString()">Facts about 中国</button>
+        <div id="text"></div>
+        
+        <div class="item" onclick="insert('4')">四</div>
+        <div class="item" onclick="insert('5')">五</div>
+        <div class="item" onclick="insert('6')">六</div>
+        
+        <button onclick="clearText()">Clear facts</button>
+        
+        <div class="item" onclick="insert('1')">一</div>
+        <div class="item" onclick="insert('2')">二</div>
+        <div class="item" onclick="insert('3')">三</div>
+        <div class="item equal" onclick="equal()">=</div>
+        <div class="item zero" onclick="insert('0')">0</div>
+        <div class="item" onclick="insert('.')">.</div>
+     </div>
+</body>
+</html>
+
+
